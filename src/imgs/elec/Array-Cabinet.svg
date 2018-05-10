@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 Array-Cabinet.svg 页-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.631534in" height="0.477991in"
+		viewBox="0 0 45.4705 34.4154" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none}
+		.st2 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.25}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="设备" v:index="0"/>
+		<v:layer v:name="电器" v:index="1"/>
+		<g id="shape1109-1" v:mID="1109" v:groupContext="shape" v:layerMember="0;1"
+				transform="translate(10.4301,33.7904) rotate(-90)">
+			<title>电子游戏机</title>
+			<v:custProps>
+				<v:cp v:nameU="ShapeClass" v:lbl="形状类" v:invis="true" v:langID="2052" v:val="VT4(资产)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="形状类型" v:invis="true" v:langID="2052" v:val="VT4(电器)"/>
+				<v:cp v:nameU="SubShapeType" v:lbl="子形状类型" v:invis="true" v:langID="2052" v:val="VT4(视频游戏)"/>
+				<v:cp v:nameU="ID" v:lbl="ID" v:type="0" v:invis="false" v:langID="2052"/>
+				<v:cp v:nameU="Name" v:lbl="名称" v:type="0" v:invis="false" v:langID="2052"/>
+				<v:cp v:nameU="Department" v:lbl="部门" v:type="0" v:invis="false" v:langID="2052"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="属于" v:type="0" v:invis="true" v:langID="2052"/>
+				<v:cp v:nameU="Modify" v:lbl="修改日期" v:type="5" v:invis="false" v:langID="2052"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="资产号" v:type="0" v:invis="false" v:langID="2052"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="序列号" v:type="0" v:invis="false" v:langID="2052"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="产品说明" v:type="0" v:invis="false" v:langID="2052"/>
+				<v:cp v:nameU="PurchaseDate" v:lbl="购买日期" v:type="5" v:invis="false" v:langID="2052"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="产品编号" v:type="0" v:langID="2052"/>
+				<v:cp v:nameU="BaseElevation" v:lbl="基本标高" v:type="2" v:langID="2052"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="U" v:val="VT0(0.39370078740157):6"/>
+				<v:ud v:nameU="3D_type" v:val="VT0(1):26"/>
+				<v:ud v:nameU="3D_model_id" v:val="VT4(电子游戏机)"/>
+				<v:ud v:nameU="SolSH" v:val="VT4({5D50005D-537C-4738-9C46-130C74335A6D})"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="资产" v:val="VT0(2):26"/>
+				<v:ud v:nameU="ShapeType" v:prompt="电器" v:val="VT0(11):26"/>
+				<v:ud v:nameU="SubShapeType" v:prompt="视频游戏" v:val="VT0(93):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="U" v:prompt="" v:val="VT0(0.0039370078740157):6"/>
+			</v:userDefs>
+			<path d="M0 34.42 L33.17 34.42 L33.17 -9.81 L0 -9.81 L0 34.42 Z" class="st1"/>
+			<path d="M0 34.42 L33.17 34.42 L33.17 -9.81 L0 -9.81 L0 34.42" class="st2"/>
+			<path d="M0.28 34.42 L0.28 -9.81" class="st2"/>
+			<path d="M32.88 34.42 L32.88 -9.81" class="st2"/>
+			<path d="M0 31.86 L33.17 31.86" class="st2"/>
+			<path d="M0 32.71 L33.17 32.71" class="st2"/>
+			<path d="M0.43 32.01 L32.74 32.01 L32.74 32.57 L0.43 32.57 L0.43 32.01" class="st2"/>
+			<path d="M8.01 33.56 a0.283465 0.283465 0 0 1 0.566929 0 a0.283465 0.283465 0 1 1 -0.566929 -7.10543E-15" class="st2"/>
+			<path d="M7.72 33.56 a0.566929 0.566929 0 0 1 1.13386 0 a0.566929 0.566929 0 1 1 -1.13386 -7.10543E-15" class="st2"/>
+			<path d="M17.29 33.28 a0.283465 0.283465 0 1 1 -0.566929 -7.10543E-15 a0.283465 0.283465 0 0 1 0.566929 0" class="st2"/>
+			<path d="M21.94 33.28 a0.283465 0.283465 0 0 1 -0.566929 0 a0.283465 0.283465 0 1 1 0.566929 -7.10543E-15" class="st2"/>
+			<path d="M27.91 33.56 a0.283465 0.283465 0 1 1 -0.566929 -7.10543E-15 a0.283465 0.283465 0 0 1 0.566929 0" class="st2"/>
+		</g>
+	</g>
+</svg>

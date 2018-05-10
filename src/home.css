@@ -1,0 +1,922 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    background-color: black;
+    background-image: url(./imgs/背景.jpg);
+    background-size: 100% 100%;
+}
+#title {
+    height: 7%;
+    background-image: url(./imgs/标头.png);
+    background-size: 100% 100%;
+    text-align: center;
+}
+#title h1 {
+    margin-top: 0;
+    padding-top: 1%;
+}
+#title, .module-title {
+    color: aqua;
+}
+
+
+
+
+
+/*主显示：PUE与机房可用性*/
+.mahjong-elec, .mahjong-keyongxing {
+    height: 7%;
+    display: flex;
+    position: absolute;
+    background-image: url(./imgs/主显示_边框.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.mahjong-elec {
+    width: 18%;
+    left: 31.5%;
+}
+.mahjong-keyongxing {
+    width: 18%;
+    left: 50.6%;
+}
+.mahjong-elec address {
+    width: 35%;
+    margin: 0 8px;
+    text-align: center;
+}
+.mahjong-keyongxing address {
+    width: 40%;
+    margin: 0 8px;
+    text-align: center;
+}
+#mahjongs address p {
+    margin-top: 1vh;
+    margin-bottom: 0;
+    color: #00ccff;
+    font-size: 2vh;
+}
+#mahjongs address small {
+    color: #00cccc;
+}
+#mahjongs span {
+    color: #fff;
+    font-size: 4.9vh;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.module {
+    position: absolute;
+    background-size: 100% 100%;
+}
+.module-title {
+    font-size: 2.3vh;
+    font-weight: bold;
+}
+.module-title:hover {
+    color: #00ccff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.module-title-left {
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.module-title-center {
+    text-align: center;
+}
+.module-subtitle {
+    position: relative;
+    top: -19%;
+    left: 34%;
+    color: #00ccff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .26vw;
+}
+.module-subtitle div {
+    width: 36px;
+    height: 36px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-flex;
+}
+.module-subtitle div span {
+    margin: auto;
+    letter-spacing: 0;
+    font-size: 130%;
+}
+.you {
+    color: #6effff;
+    border-color: #6effff;
+    background-color: rgba(110,255,255,0.3);
+}
+.liang {
+    color: #7ffa81;
+    border-color: #7ffa81;
+    background-color: rgba(127,250,129,0.3);
+}
+.zhong {
+    color: #8a6d3b;
+}
+.cha {
+    color: #a94442;
+}
+
+
+
+
+
+
+/*总体评估*/
+#zongtipinggu {
+    top: 8%;
+    left: 5px;
+    width: 28.7%;
+    height: 24%;
+    background-image: url(./imgs/模块_边框1.png);
+}
+#zongtipinggu .module-content {
+    height: 90%;
+    top: -25px;
+    position: relative;
+    display: flex;
+}
+#assess-bg {
+    width: 13vh;
+    height: 13vh;
+    top: 1vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#assess-bg #assess-radar {
+    width: 100%;
+    height: 100%;
+}
+#assess-bg .circle {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    position: absolute;
+    border: 2px dashed;
+    border-radius: 50%;
+    animation: rotate 25s infinite linear;
+}
+#assess-bg .circle:nth-child(1) {
+    width: 30%;
+    height: 30%;
+    border-color: red;
+}#assess-bg .circle:nth-child(2) {
+    width: 60%;
+    height: 60%;
+     border-color: blue;
+}#assess-bg .circle:nth-child(3) {
+    width: 90%;
+    height: 90%;
+      border-color: green;
+}
+#assess-bg .label-line {
+    width: 50%;
+    height: 0;
+    position: absolute;
+    border-bottom: 1px solid cadetblue;
+}
+#assess-bg .labels .env .label-line {
+    top: 27%;
+    right: 89%;
+}
+#assess-bg .labels .mng .label-line {
+    top: 27%;
+    left: 89%;
+}#assess-bg .labels .power .label-line {
+    width: 20%;
+    top: 105%;
+    left: 40%;
+    transform: rotate(90deg);
+}
+
+ #assess-bg .labels .label-content {
+     position: absolute;
+ }
+ #assess-bg .labels .table {
+     border-color: rgba(102,255,255, 0.4);
+ }
+#assess-bg th, #assess-bg td {
+    padding: 3px 5px;
+    border-color: rgba(102,255,255, 0.4);
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+}
+#assess-bg .table .title {
+    min-width: 4vw;
+    background-color: rgba(0, 255, 153, 0.22);
+    font-size: 120%;
+    color: #09f;
+}
+ #assess-bg th {
+     color: #0cf;
+ }
+ #assess-bg td {
+     color: #0f0;
+ }
+
+
+#assess-bg .env .label-content {
+    top: 16%;
+    right: 142%;
+}
+#assess-bg .mng .label-content {
+    top: 16%;
+    left: 142%;
+}
+#assess-bg .power .label-content {
+    top: 117%;
+    left: 50%;
+    transform: translate(-50%, 0); /*水平居中*/
+}
+#assess-bg .power th, #assess-bg .power td {
+    padding: 1px 7px;
+}
+/*#zongtipinggu .module-content>div {*/
+    /*height: 100%;*/
+    /*position: relative;*/
+/*}*/
+/*#zongtipinggu-indicates>div { !*指标：动力  环境  管理*!*/
+    /*height: 28%;*/
+/*}*/
+/*#zongtipinggu-indicates .item-title {*/
+    /*margin-left: 7%;*/
+    /*position: relative;*/
+    /*color: #0099ff;*/
+    /*display: inline-block;*/
+/*}*/
+/*#zongtipinggu-indicates .item-title span {*/
+    /*width: 15px;*/
+    /*height: 15px;*/
+    /*margin-top: 10%;*/
+    /*margin-left: 30%;*/
+    /*border-radius: 50%;*/
+    /*position: absolute;*/
+    /*background-color: #00ffcc;*/
+/*}*/
+/*#zongtipinggu-indicates .item-title:before {*/
+    /*content: "";*/
+    /*width: 300%;*/
+    /*height: 100%;*/
+    /*left: -100%;*/
+    /*position: absolute;*/
+    /*transform: skewX(-17deg);*/
+    /*!*background: -moz-linear-gradient(top, #0099ff, #0000ff);*!*/
+    /*background: linear-gradient(rgba(0,153,255,0.28) 50%, #0000ff);*/
+    /*z-index: -1;*/
+/*}*/
+/*#zongtipinggu-indicates .item-table {*/
+    /*color: #00ccff;*/
+    /*table-layout: fixed;*/
+/*}*/
+/*#zongtipinggu-indicates td {*/
+    /*padding: 1px;*/
+    /*border: 0;*/
+    /*text-align: center;*/
+    /*font-size: 13px;*/
+    /*white-space: nowrap;*/
+/*}*/
+/*#zongtipinggu .indicate-keys {*/
+    /*border-bottom: 1px solid #999;*/
+/*}*/
+/*#zongtipinggu-indicates .assess-you {*/
+    /*color: #00ffff;*/
+/*}*/
+/*#zongtipinggu-indicates .assess-liang {*/
+    /*color: #00ff99;*/
+/*}*/
+/*#zongtipinggu-indicates .assess-zhong {*/
+    /*color: #ffcc00;*/
+/*}*/
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/*elec system*/
+#elec {
+    top: 33.4%;
+    left: 5px;
+    width: 28.7%;
+    height: 33%;
+    background-image: url(./imgs/模块_边框1.png);
+}
+#elec .module-content {
+    height: 88%;
+    top: -10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#elec-indicate, #ups-indicate {
+    height: 100%; /*把下面的echarts挤到底部*/
+    position: relative;
+}
+#elec-indicate .table, #ups-indicate .table { /*垂直居中*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+#elec-indicate th, #elec-indicate td, #ups-indicate th, #ups-indicate td{
+    border: 0;
+    padding: 3px 8px;
+    text-align: center;
+}
+#elec-indicate th, #ups-indicate th {
+    color: #0cf;
+}
+#elec-indicate th.title, #ups-indicate th.title {
+    font-size: 120%;
+    text-align: right;
+}
+#elec-indicate .normal, #ups-indicate .normal {
+    color: #0f0;
+}
+#elec-indicate .no-data, #ups-indicate .no-data {
+    color: #999;
+}#elec-indicate .warn, #ups-indicate .warn {
+    color: #ff0;
+}#elec-indicate .error, #ups-indicate .error {
+    color: #f00;
+}
+/*#elec-indicate, #ups-indicate {*/
+    /*!*height: 35%;*!*/
+    /*padding: 4% 0;*/
+    /*color: #00ccff;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+/*}*/
+/*#elec-indicate .row, #ups-indicate .row {*/
+    /*height: 50%;*/
+/*}*/
+/*#elec-indicate .row>div, #ups-indicate .row>div {!*table-cell*!*/
+    /*height: 100%;*/
+    /*line-height: 2.6vh;*/
+    /*text-align: center;*/
+/*}*/
+/*#elec-indicate .assess, #ups-indicate .assess {*/
+    /*padding: 0 .5vw;*/
+    /*font-size: 130%;*/
+    /*font-weight: bold;*/
+/*}*/
+/*#elec-indicate .assess-you, #ups-indicate .assess-you {*/
+    /*color: #00ffff;*/
+/*}*/
+/*#elec-indicate .assess-liang, #ups-indicate .assess-liang {*/
+    /*color: #00ff00;*/
+/*}*/
+
+#elec-echarts-title {
+    color: #09f;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+#elec-echarts-title .btn-group {
+    top: 0;
+    right: 5%;
+    position: absolute;
+}
+#elec-echarts-title .btn-group li {
+    padding: 0 4px 2px;
+    border-width: 3px;
+    border-bottom: 2px solid rgba(0,255,255, 0.28);
+    border-radius: 4px;
+}
+#elec-echarts-title .btn-group a{
+    font-size: 14px;
+    color: #0cf;
+}
+
+#elec-slider li {
+    height: 18vh;
+}
+
+
+
+
+
+
+
+
+/*UPS system*/
+#ups {
+    top: 68%;
+    left: 5px;
+    width: 28.7%;
+    bottom: 7px;
+    background-image: url(./imgs/模块_边框1.png);
+}
+#ups .module-content{
+    height: 88%;
+    top: -12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#ups-echarts {
+    height: 80%;
+    padding: 1% 3% 4%;
+    display: flex;
+}
+#ups-echarts .title {
+    width: 80px;
+    height: 23px;
+    left: 50%;
+    margin-left: -40px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    position: relative;
+    color: #0cf;
+    background-color: #01040b;
+    text-align: center;
+    z-index: 1;
+}
+#ups-echarts .title:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 72px;
+    bottom: 3px;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    background-color: #01040b;
+    transform: rotate(-45deg);
+}
+#ups-echarts .title:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 72px;
+    bottom: 3px;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    background-color: #01040b;
+    transform: rotate(45deg);
+}
+#upsPie, #upsBar {
+    width: 100%;
+    height: 100%;
+    top: 11px;
+    border: 1px solid #666666;
+    position: absolute;
+}
+
+
+
+
+
+
+/*3D*/
+#threeD {
+    top: 38.6%;
+    left: 29.5%;
+    right: 29.5%;
+    height: 36%;
+    background-image: url(./imgs/模块_边框2.png);
+}
+#threeD_1 {
+    width: 95%;
+    margin: 0 auto;
+    height: 85%;
+    text-align: center;
+    font-size: 0;
+}
+#threeD_1 .three_floor_btn{
+    /*position: absolute;*/
+    /*left: 500px;*/
+    /*top: 5px;*/
+    height: 0;
+    color: #eeeeee;
+}
+#threeD_1 .three_floor_btn .btn {
+    font-size: 24px;
+}
+#threeD_1 .three_floor_btn .btn:hover {
+    color: #0cf;
+}
+
+#threeD_1 .three_fct_btn {
+    position: absolute;
+    width: 50px;
+    left:1%;
+    top: 200px;
+}
+
+#threeD_1 .three_fct_btn .btn {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left:0;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+#threeD_1 .three_fct_btn .btn:hover {
+    border: 2px solid #555555;
+}
+#threeD_1 .three_fct_btn .btn:nth-of-type(1){
+    background-image: url(./imgs/3d/u2003.png);
+}
+
+#threeD_1 .three_fct_btn .btn:nth-child(2){
+    background-image: url(./imgs/3d/u2005.png);
+}
+
+#threeD_1 .three_fct_btn .btn:nth-child(3){
+    background-image: url(./imgs/3d/u2017.png);
+}
+
+#three1, #three2,#three3 {
+    width:100%;
+    height:100%;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/*environment*/
+#env {
+    top: 76%;
+    left: 29.5%;
+    right: 29.5%;
+    bottom: 7px;
+    background-image: url(./imgs/模块_边框2.png);
+}
+#env .module-content {
+    height: 92%;
+    top: -5%;
+    position: relative;
+    display: flex;
+}
+#env .module-content>div {
+    position: relative;
+    height: 100%;
+}
+#env-slides li {
+    height: 21vh;
+}
+#env-indicate {
+    display: flex;
+    flex-direction: column;
+}
+#env-indicate>.row { /*三层机房*/
+    height: 33.33%;
+    margin-left: 10px;
+    padding: 2%;
+    display: flex;
+}
+#env-indicate .grey {
+    color: #ccc;
+}
+#env-indicate .leak {
+    color: #ff0000;  /*空调漏水报警*/
+    left: -.7vw;
+}
+#env-indicate .leak-normal {
+    color: #00ffff;
+}
+#env-indicate .row>span {
+    margin: auto 0;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+ul.aircondition-states {
+    padding-left: 0;
+    color: #fff;
+    list-style: none;
+    display: flex;
+}
+ul.aircondition-states li {
+    padding: 0 1%;
+    display: flex;
+    flex-direction: column;
+}
+ul.aircondition-states .aircondition-index {
+    text-align: center;
+}
+ul.aircondition-states .btn {
+    padding: 7px;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+ul.aircondition-states .aircondition-normal {
+    background-color: #009b00;
+}
+ul.aircondition-states .aircondition-sleep {
+    background-color: #666;
+}
+
+
+
+
+
+
+/*alarm analysis*/
+#alarm {
+    top: 8%;
+    left: 71%;
+    right: 9px;
+    height: 65%;
+    background-image: url(./imgs/模块_边框3.png);
+}
+#alarm .module-content {
+    height: 96%;
+    padding: 0 4%;
+    top: -1%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#alarm .module-content>div { /*day month year*/
+    position: relative;
+}
+.alarm-title {
+    color: #0099ff;
+    text-decoration: underline;
+}
+.alarm-title small {
+    color: rgba(0,153,255,0.5);
+}
+
+#alarm-current .alarm-current-wrapper {
+    width: 18vh;
+    height: 18vh;
+    margin: 0 auto;
+    position: relative;
+}
+#alarm-current .alarm-current-wrapper .alarm-current-count {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #0cf;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+}
+#alarm-current .alarm-current-count b{
+    font-size: 2em;
+    /*color: orangered;*/
+}
+#alarm-current .circle { /*大圆圈*/
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #0ff;
+    border-radius: 50%;
+    animation: rotate 25s infinite linear;
+}
+#alarm-current .indicator {  /*六项指标*/
+    width: 50%;
+    height: 14%;
+    position: absolute;
+    color: #0cf;
+    border-bottom: 1px dashed #0ff;
+    font-size: 18px;
+    white-space: nowrap;
+}
+#alarm-current .indicator:before { /*折线*/
+    content: '';
+    position: absolute;
+    border-bottom: 1px dashed #0ff;
+}
+#alarm-current .indicator:after { /*实心圆点*/
+    content: '';
+    position: absolute;
+    border: 3px solid #0ff;
+    border-radius: 50%;
+}
+#alarm-current .elec:before {
+    width: 58%;
+    top: 140%;
+    left: 100%;
+    transform: rotate(20deg);
+}
+#alarm-current .elec:after {
+    top: 165%;
+    left: 152%;
+}
+#alarm-current .ups:before {
+    width: 40%;
+    left: 100%;
+    top: 100%;
+}
+#alarm-current .ups:after {
+    left: 138%;
+    top: 87%;
+}
+#alarm-current .env:before {
+    width: 65%;
+    left: 100%;
+    top: 55%;
+    transform: rotate(-20deg);
+}
+#alarm-current .env:after {
+    left: 162%;
+}
+
+#alarm-current .aircdt:before {
+    width: 40%;
+    right: 100%;
+    top: 140%;
+    transform: rotate(-30deg);
+}
+#alarm-current .aircdt:after {
+    top: 165%;
+    left: -39%;
+}
+#alarm-current .security:before {
+    width: 20%;
+    top: 100%;
+    right: 100%;
+}
+#alarm-current .security:after {
+    left: -24%;
+    top: 90%;
+}
+#alarm-current .fire:before {
+    width: 50%;
+    top: 60%;
+    right: 100%;
+    transform: rotate(25deg);
+}
+#alarm-current .fire:after {
+    left: -50%;
+    top: 12%;
+}
+
+#alarm-current .alarm-info {
+    text-align: center;
+    margin: 0;
+    margin-top: 1vh;
+    color: orangered;
+    background-color: rgba(255,0,0,0.3);
+    font-size: 1.3em;
+}
+
+
+
+
+
+/*#alarm-current p {*/
+    /*color: #00ff99;*/
+    /*text-align: center;*/
+    /*letter-spacing: 5px;*/
+    /*font-size: 20px;*/
+/*}*/
+
+#alarm-month .echarts {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+}
+#alarm-month-right {
+    border: 1px solid #797979;
+    border-radius:  6px;
+}
+#alarm-below {
+    width: 100%;
+    top: 15%;
+    bottom: 0;
+    position: absolute;
+}
+
+
+
+
+/*notice*/
+#notice {
+    top: 75%;
+    left: 71%;
+    right: 12px;
+    bottom: 7px;
+    background-image: url(./imgs/模块_边框2.png);
+}
+#notice .module-content {
+    height: 90%;
+    top: -3%;
+    position: relative;
+    display: flex;
+}
+#notice .module-content>div {/*above below*/
+    display: flex;
+    padding: 2%;
+}
+#notice-above {
+    border-bottom: 1px dashed #ccc;
+}
+#notice .notice-title {
+    width: 20%;
+    margin: auto 0;
+    text-align: center;
+}
+#notice .notice-title span {
+    width: 60px;
+    height: 60px;
+    padding-top: 4px;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+}
+#notice .notice-events {
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+}
+#notice .notice-events p {
+    margin-bottom: 5px;
+    padding: 2px 0;
+}
+#notice-above .notice-events p {
+    background-color: rgba(0,255,0,0.08);
+}
+#notice-below .notice-events p {
+    background-color: rgba(0,255,255,0.16);
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+#modal .modal-dialog {
+    width: 70%;
+    height: 80%;
+}
+#modal .modal-content {
+    height: 100%;
+    border: 2px solid #0cf;
+    background-image: url(./imgs/背景.jpg);
+}
+
+
+
+
+
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

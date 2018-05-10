@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 Transformer.svg 页-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="1.07681in" height="0.477991in"
+		viewBox="0 0 77.5303 34.4154" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.25}
+		.st2 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.25}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="电气" v:index="0"/>
+		<g id="group992-1" transform="translate(10.5746,-0.625)" v:mID="992" v:groupContext="group" v:layerMember="0">
+			<v:custProps>
+				<v:cp v:nameU="Label" v:lbl="标签" v:type="0" v:format="@" v:sortKey="" v:invis="false" v:ask="false" v:langID="2052"
+						v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="CH"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="visDescription" v:val="VT4(仪表用变压器。)"/>
+			</v:userDefs>
+			<title>仪表用变压器 2</title>
+			<g id="shape993-2" v:mID="993" v:groupContext="shape" v:layerMember="0" transform="translate(23.2157,-4.74028)">
+				<title>工作表.993</title>
+				<path d="M4.97 34.42 A16.5827 16.5827 -180 0 0 9.95 22.57 A16.5827 16.5827 -180 0 0 4.97 10.73 A16.5827 16.5827 -180
+							 0 0 -0 22.57 A16.5827 16.5827 -180 0 0 4.97 34.42 Z" class="st1"/>
+			</g>
+			<g id="shape994-4" v:mID="994" v:groupContext="shape" v:layerMember="0">
+				<title>工作表.994</title>
+				<path d="M28.19 29.68 A16.5827 16.5827 0 0 1 23.22 17.83 A16.5827 16.5827 0 0 1 28.19 5.99 A16.5827 16.5827 -180
+							 0 0 0 17.83 A16.5827 16.5827 -180 0 0 28.19 29.68 ZM28.19 29.68 A16.5827 16.5827 -180 0 0 56.38 17.83
+							 A16.5827 16.5827 -180 0 0 28.19 5.99 A16.5827 16.5827 0 0 1 33.17 17.83 A16.5827 16.5827 0 0 1 28.19
+							 29.68 Z" class="st1"/>
+			</g>
+			<g id="shape995-6" v:mID="995" v:groupContext="shape" v:layerMember="0" transform="translate(-9.94961,-16.5827)">
+				<title>工作表.995</title>
+				<path d="M0 34.42 L9.95 34.42" class="st2"/>
+			</g>
+			<g id="shape996-9" v:mID="996" v:groupContext="shape" v:layerMember="0" transform="translate(56.3811,-16.5827)">
+				<title>工作表.996</title>
+				<path d="M0 34.42 L9.95 34.42" class="st2"/>
+			</g>
+		</g>
+	</g>
+</svg>
