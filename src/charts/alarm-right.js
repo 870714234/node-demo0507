@@ -1,8 +1,13 @@
-$(function () {
-    charts.alarmRight.setOption(options.alarmRight, true);
-});
+// $(function () {
+//     charts.alarmRight.setOption(options.alarmRight, true);
+// });
+var $ = require('../lib/jquery-3.3.1');
+require('../lib/resize');
+var echarts = require('echarts');
 
-options.alarmRight = {
+
+var chart;
+var option = {
     title: {
         text: '配电系统',
         padding: [5, 20],
@@ -85,6 +90,19 @@ options.alarmRight = {
     backgroundColor: 'rgba(0,255,255, 0.11)'
 };
 
-$("#alarm-month-right").resize(function () {
-    charts.alarmRight.resize();
-});
+// $("#alarm-month-right").resize(function () {
+//     charts.alarmRight.resize();
+// });
+module.exports = {
+    bind: function (dom) {
+        chart = echarts.init(dom);
+        chart.setOption(option);
+        $(dom).resize(()=>{
+            console.log("resized!!@alarm-right.js");
+            chart.resize();
+        })
+    },
+    getChart: function () {
+        return chart;
+    }
+};

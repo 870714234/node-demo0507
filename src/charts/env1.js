@@ -1,5 +1,5 @@
 var echarts = require('echarts');
-var flexslider = require('./lib/jquery.flexslider');
+var flexslider = require('../lib/jquery.flexslider');
 
 // $(function () {
 //     charts.env1.setOption(options.env1, true);

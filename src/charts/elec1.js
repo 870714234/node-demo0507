@@ -1,5 +1,6 @@
 var echarts = require('echarts');
-var flexslider = require('./lib/jquery.flexslider');
+var darkTheme = require('../lib/dark');
+var flexslider = require('../lib/jquery.flexslider');
 
 // $(function () {
     // charts.elec1.setOption(options.elec1, true);

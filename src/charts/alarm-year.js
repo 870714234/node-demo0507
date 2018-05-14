@@ -1,7 +1,10 @@
 var echarts = require('echarts');
+var $ = require('../lib/jquery-3.3.1');
+require('../lib/resize');
 // $(function () {
 //     charts.alarmYear.setOption(options.alarmYear, true);
 // });
+var chart;
 var richOption = {
     Txt: {
         fontSize: 14,
@@ -104,6 +107,14 @@ var option_alarmYear = {
 // });
 module.exports = {
     bind: function (dom) {
-        echarts.init(dom).setOption(option_alarmYear);
+        chart = echarts.init(dom);
+        chart.setOption(option_alarmYear);
+        $(dom).resize(()=>{
+            console.log("resized!!!@alarm-year.js");
+            chart.resize();
+        });
+    },
+    getChart: function () {
+        return chart;
     }
 };
