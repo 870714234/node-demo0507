@@ -1,4 +1,5 @@
 var echarts = require('echarts');
+require('../lib/dark');
 var $ = require('../lib/jquery-3.3.1');
 require('../lib/resize');
 // $(function () {
@@ -107,10 +108,10 @@ var option_alarmYear = {
 // });
 module.exports = {
     bind: function (dom) {
-        chart = echarts.init(dom);
+        chart = echarts.init(dom, 'dark');
         chart.setOption(option_alarmYear);
         $(dom).resize(()=>{
-            console.log("resized!!!@alarm-year.js");
+            // console.log("resized!!!@alarm-year.js");
             chart.resize();
         });
     },

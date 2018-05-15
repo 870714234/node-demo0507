@@ -29,12 +29,12 @@ var chart_alarmYear = require('./charts/alarm-year');
 chart_alarmYear.bind(document.getElementById('alarm-below'));
 chart_alarmMonthRight.bind(document.getElementById('alarm-month-right'));
 chart_alarmMonthLeft.bind(document.getElementById('alarm-month-left'));
-chart_alarmMonthLeft.rotate(10*1000);
+chart_alarmMonthLeft.rotate(20*1000);
 
 
 var floorSwitcher = require('./floorSwitcher');
-floorSwitcher.init(5*1000);
+floorSwitcher.init(25*1000);
 
 var alarmSwitcher = require('./AlarmSwitcher');
-alarmSwitcher.setPeriod(10*1000);
+alarmSwitcher.setPeriod(30*1000);
 alarmSwitcher.switch('month','year');

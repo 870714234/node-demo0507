@@ -1,4 +1,5 @@
 var echarts = require('echarts');
+require('../lib/dark');
 
 // $(function(){
 // 	charts.upsPie.setOption(options.upsPie, true);
@@ -112,7 +113,7 @@ UpsRoller.upsIndex = 1;
 
 module.exports = {
     bind: function (dom) {
-        chart_upsPie = echarts.init(dom);
+        chart_upsPie = echarts.init(dom, 'dark');
         chart_upsPie.setOption(option_upsPie);
     },
     roll: function (period) {

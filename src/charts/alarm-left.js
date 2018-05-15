@@ -96,10 +96,11 @@ var _onRotateFinished = function(moduleNameNext) {
 
 module.exports = {
     bind: function (dom) {
-        chart = echarts.init(dom);
+        chart = echarts.init(dom, 'dark');
         chart.setOption(option);
         $(dom).resize(()=>{
-            console.log("resized!!!@alarm-left.js");
+            // console.log("resized!!!@alarm-left.js");
+            chart.resize();
         });
     },
     rotate: function (period) {

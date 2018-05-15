@@ -1,4 +1,5 @@
 var echarts = require('echarts');
+require('../lib/dark');
 var flexslider = require('../lib/jquery.flexslider');
 
 // $(function () {
@@ -155,7 +156,7 @@ var option_env1 = {
 
 module.exports = {
     bind: function (dom) {
-        echarts.init(dom).setOption(option_env1);
+        echarts.init(dom, 'dark').setOption(option_env1);
     },
     slide: function (selector) {
         flexslider.flexslider(selector, {

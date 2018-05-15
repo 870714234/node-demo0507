@@ -1,4 +1,5 @@
 var echarts = require('echarts');
+require('../lib/dark');
 
 
 // $(function () {
@@ -106,6 +107,6 @@ var option_upsBar = {
 
 module.exports = {
     bind: function (dom) {
-        echarts.init(dom).setOption(option_upsBar);
+        echarts.init(dom, 'dark').setOption(option_upsBar);
     }
 };

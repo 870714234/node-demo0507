@@ -4,6 +4,7 @@
 var $ = require('../lib/jquery-3.3.1');
 require('../lib/resize');
 var echarts = require('echarts');
+require('../lib/dark');
 
 
 var chart;
@@ -95,10 +96,10 @@ var option = {
 // });
 module.exports = {
     bind: function (dom) {
-        chart = echarts.init(dom);
+        chart = echarts.init(dom, 'dark');
         chart.setOption(option);
         $(dom).resize(()=>{
-            console.log("resized!!@alarm-right.js");
+            // console.log("resized!!@alarm-right.js");
             chart.resize();
         })
     },

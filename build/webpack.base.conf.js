@@ -4,16 +4,14 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    mode: 'production',
     entry: {
         index: './src/index.js',
         action: './src/action.js'
     },
-    // devtool: 'inline-source-map',
     plugins: [
         new CleanWebpackPlugin(['../dist']),
         new HtmlWebpackPlugin({
-            title: 'Development',
+            title: 'IDCIM',
             template: './src/template.html'
         }),
         new ExtractTextPlugin('styles.css')
